@@ -1,5 +1,7 @@
 ### node.js가 설치 되어 있다는 가정하에 시작합니다.
 
+##### 빠른 시작을 위해 Transpiler ModuleBundler 등 의 설명은 생략합니다.
+
 #### npx create-react-app [project-name]
 
     현재 위치에 project-name을 가진 프로젝트를 생성합니다.
@@ -32,3 +34,17 @@
     `yarn global add serve`
     `serve build`
     build폴더의 결과물을 확인해 볼 수 있습니다.
+
+#### 파일 정리
+
+    프로젝트를 생성했으니 필요없는 파일을 정리해봅시다.
+    ⋅⋅⋅src
+    ⋅⋅⋅*⋅App.css
+    ⋅⋅⋅⋅App.js
+    ⋅⋅⋅⋅*App.test.js
+    ⋅⋅⋅⋅*index.css
+    ⋅⋅⋅⋅index.js
+    ⋅⋅⋅⋅*logo.svg
+    ⋅⋅⋅⋅*serviceWorker.js
+
+    *표시가 된 파일을 모두 삭제해주세요.
