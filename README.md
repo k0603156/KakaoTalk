@@ -48,3 +48,14 @@
     ⋅⋅⋅⋅*serviceWorker.js
 
     *표시가 된 파일을 모두 삭제해주세요.
+
+    코드정리는 github 참조
+    https://github.com/k0603156/2w1h_React/commit/139d92639737ecfe89887dd985d7f5ad00cbc888
+
+#### dependencies
+
+    node-sass
+    react-router-dom
+    axios
+    redux
+    react-redux
