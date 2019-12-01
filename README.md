@@ -1,68 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### node.js가 설치 되어 있다는 가정하에 시작합니다.
 
-## Available Scripts
+#### npx create-react-app [project-name]
 
-In the project directory, you can run:
+    현재 위치에 project-name을 가진 프로젝트를 생성합니다.
+    최신버전의 create-react-app을 설치해 프로젝트를 생성하고 제거됩니다.
+    글로벌로 설치해 주기적으로 최신버전을 유지 할 필요도 없고 더이상 사용하지 않는 모듈을 남겨 둘 이유도 없습니다.
+    `$which create-react-app`을 실행해보면 `which: no create-react-app in`이라며 찾을 수 없다고 나타납니다.
+    (npm@5.2.0이상이라면 npx가 포함 되어 있습니다.)
 
-### `yarn start`
+#### 생성 된 프로젝트 둘러보기
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    현재 (create-react-app@3.2.0 기준) 생성된 프로젝트를 보면 이렇게 되어 있습니다.
+    ⋅⋅⋅project
+    ⋅⋅⋅⋅node_modules -프로젝트의 모듈폴더
+    ⋅⋅⋅⋅public -페이지 템플릿
+    ⋅⋅⋅⋅src
+    ⋅⋅⋅⋅⋅⋅⋅⋅index.js -진입점
+    ⋅⋅⋅⋅.gitignore
+    ⋅⋅⋅⋅package.json -의존성관리 파일
+    ⋅⋅⋅⋅README.md
+    ⋅⋅⋅⋅yarn.lock
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+#### build
 
-### `yarn test`
+    `npm run-script build or yarn build`를 실행하세요
+    ⋅⋅⋅project
+    ⋅⋅⋅⋅build
+    프로젝트내에 build라는 새로운 폴더가 생겼습니다.
+    이 폴더에는 빌드된 결과물이 들어가게됩니다.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+    `yarn global add serve`
+    `serve build`
+    build폴더의 결과물을 확인해 볼 수 있습니다.
