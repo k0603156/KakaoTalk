@@ -1,0 +1,45 @@
+.App-aside {
+  height: calc(100vh - #{$height-footer});
+  padding: 30px 5px;
+  display: flex;
+  flex-basis: 60px;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: #ececee;
+  .App-aside-top {
+    display: flex;
+    flex-direction: column;
+    a {
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      padding: 5px;
+      border-radius: 50%;
+      &:hover {
+        background: #e0e0e0;
+      }
+      img {
+        vertical-align: middle;
+      }
+    }
+  }
+  .App-aside-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a {
+      height: 15px;
+      line-height: 15px;
+      padding: 10px;
+      border-radius: 50%;
+      &:hover {
+        background: #e0e0e0;
+      }
+      img {
+        width: 15px;
+        vertical-align: middle;
+      }
+    }
+  }
+}

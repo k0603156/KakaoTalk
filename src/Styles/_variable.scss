@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "KakaoBold";
+  src: url("../media/fonts/KakaoBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "KakaoRegular";
+  src: url("../media/fonts/KakaoRegular.ttf") format("truetype");
+}
+$font-family-default: "KakaoRegular";
+$font-family-bold: "KakaoBold";
+
+$themeColor-deep: rgba(144, 232, 186, 91);
+$themeColor-primary: rgba(171, 255, 188, 100);
+$themeColor-secondary: rgba(153, 232, 144, 91);
+$themeColor-info: rgba(202, 255, 158, 100);
+$themeColor-mild: rgba(158, 255, 232, 100);
+
+$fontColor-deep: #000000;
+$fontColor-primary: #3b3c40;
+$fontColor-secondary: #757880;
+$fontColor-mild: #d3d9e6;
+
+$height-footer: 100px;

@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font: {
+    size: 1rem;
+    family: serif;
+  }
+  .App {
+    display: flex;
+    .App-body {
+      flex: 1;
+      padding-left: 10px;
+      .App-workbox {
+        height: 20px;
+      }
+    }
+  }
+  .App-footer {
+    height: $height-footer;
+    text-align: center;
+    .App-footer-banner {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

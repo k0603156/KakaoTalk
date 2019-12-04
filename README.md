@@ -59,3 +59,5 @@
     axios
     redux
     react-redux
+
+    react-syntax-highlighter
