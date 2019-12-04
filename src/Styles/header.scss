@@ -1,13 +1,30 @@
 .Section-header {
-  padding: 0 10px;
+  padding: 0 20px;
 
   .Section-toolbar {
+    $height-toolbar: 40px;
     display: flex;
     justify-content: space-between;
-    height: 30px;
+    height: $height-toolbar;
     .Section-title {
       font-size: 1.3rem;
       font-family: $font-family-bold;
+      line-height: $height-toolbar;
+    }
+    .Section-menu {
+      display: flex;
+      a {
+        text-align: center;
+        width: $height-toolbar;
+        line-height: $height-toolbar;
+        border-radius: 50%;
+        &:active {
+          background: #cecece;
+        }
+        img {
+          vertical-align: middle;
+        }
+      }
     }
   }
   .Section-searchbar {

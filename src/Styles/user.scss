@@ -1,0 +1,61 @@
+@mixin Profile-img-wrapper($height) {
+  .Profile-img-wrapper {
+    flex-basis: calc(#{$height} - 20px);
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+@mixin Profile-data-wrapper($height) {
+  .Profile-data-wrapper {
+    flex: 1;
+    margin: calc((#{$height} - 52px) / 2) 20px;
+    .Profile-data-name {
+      font-size: 0.9rem;
+      font-family: $font-family-default;
+    }
+    .Profile-data-message {
+      font-size: 0.7rem;
+    }
+  }
+}
+.Section-body {
+  height: calc(100vh - 200px);
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .Section-devider {
+    border: none;
+    border-bottom: 1px solid #cecece;
+    margin: 5px 20px;
+  }
+  .Article-header {
+    padding: 5px 20px;
+    font-size: 0.8rem;
+  }
+  .Profile-container {
+    display: flex;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    transition-duration: 0.3s;
+
+    &.lg {
+      $height: 70px;
+      height: $height;
+      @include Profile-img-wrapper($height);
+      @include Profile-data-wrapper($height);
+    }
+    &.sm {
+      $height: 60px;
+      height: $height;
+      @include Profile-img-wrapper($height);
+      @include Profile-data-wrapper($height);
+    }
+
+    &:active {
+      background: #cecece;
+    }
+  }
+}

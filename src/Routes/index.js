@@ -1,12 +1,12 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
-import Home from "./Home";
-import List from "./List";
+import User from "./User";
+import Chat from "./Chat";
 const AppRoute = () => (
   <Switch>
-    <Route exact path="/" component={Home}></Route>
-    <Route exact path="/list" component={List}></Route>
-    <Route exact path="/content/:page" component={List}></Route>
+    <Route exact path="/" component={User}></Route>
+    <Route exact path="/chat" component={Chat}></Route>
+    <Route exact path="/content/:page" component={Chat}></Route>
     <Redirect from="*" to="/"></Redirect>
   </Switch>
 );

@@ -11,27 +11,27 @@ const Aside = ({ history }) => {
   return (
     <div className="App-aside">
       <div className="App-aside-top">
-        <Link to="/list">
+        <Link to="/">
           <img src={UserIco} alt="친구" />
         </Link>
-        <Link to="/list">
+        <Link to="/chat">
           <img src={ChatIco} alt="채팅" />
         </Link>
-        <Link to="/list">
+        <Link to="/chat">
           <img src={EllipsisIco} alt="더보기" />
         </Link>
       </div>
       <div className="App-aside-bottom">
-        <Link to="/list">
+        <Link to="/chat">
           <img src={ImoziIco} alt="카카오 이모티콘샵" />
-        </Link>{" "}
-        <Link to="/list">
+        </Link>
+        <Link to="/chat">
           <img src={CalendarIco} alt="톡캘린더" />
-        </Link>{" "}
-        <Link to="/list">
+        </Link>
+        <Link to="/chat">
           <img src={AlrmIco} alt="알림" />
-        </Link>{" "}
-        <Link to="/list">
+        </Link>
+        <Link to="/chat">
           <img src={MenuIco} alt="메뉴" />
         </Link>
       </div>

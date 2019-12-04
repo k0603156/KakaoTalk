@@ -6,7 +6,7 @@ const Header = () => {
     <header className="Section-header">
       <div className="Section-toolbar">
         <span className="Section-title">친구</span>
-        <div>
+        <div className="Section-menu">
           <a href="/#">
             <img src={AddUserIco} alt="친구 추가" />
           </a>
