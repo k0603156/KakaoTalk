@@ -9,7 +9,6 @@ const User = ({ friends, addFriend, deleteFavorite, deleteFriend }) => {
     title: "친구",
     placeHolder: "이름 검색"
   };
-
   const [searchinput, setSearchInput] = useState("");
   const myProfile = { name: "용국", message: "Happy hacking!" };
   const favoritesData = friends.favorites;

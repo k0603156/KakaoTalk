@@ -8,19 +8,19 @@ export const deleteFriend = friend => ({ type: DELETE_FRIEND, friend });
 
 const initialState = {
   favorites: [
-    { name: "진환", message: "Happy hacking!" },
-    { name: "지찬", message: "Happy hacking!" },
-    { name: "온유", message: "Happy hacking!" },
-    { name: "온유 사수님", message: "Happy hacking!" }
+    { name: "진환", message: "꽃길만 걷자♡" },
+    { name: "지찬", message: "존나 추워 집밖은 지옥이다" },
+    { name: "온유", message: "감사하면 두려울게 없지" },
+    { name: "온유 사수님", message: "" }
   ],
   friends: [
-    { name: "친구1", message: "Happy hacking!" },
-    { name: "친구2", message: "Happy hacking!" },
-    { name: "친구3", message: "Happy hacking!" },
-    { name: "진환", message: "Happy hacking!" },
-    { name: "지찬", message: "Happy hacking!" },
-    { name: "온유", message: "Happy hacking!" },
-    { name: "온유 사수님", message: "Happy hacking!" }
+    { name: "친구1", message: "내려놓기" },
+    { name: "배성탑", message: "- 구슬동자 ost 3번식 듣자" },
+    { name: "친구2", message: "Dobby is not free." },
+    { name: "진환", message: "꽃길만 걷자♡" },
+    { name: "지찬", message: "존나 추워 집밖은 지옥이다" },
+    { name: "온유", message: "감사하면 두려울게 없지" },
+    { name: "온유 사수님", message: "" }
   ]
 };
 
