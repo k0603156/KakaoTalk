@@ -1,5 +1,6 @@
-import { createStore } from "redux";
+import { combineReducers } from "redux";
+import friends from "./modules/friends";
 
-const Store = () => {
-  return createStore();
-};
+export default combineReducers({
+  friends
+});

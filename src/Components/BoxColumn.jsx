@@ -1,9 +1,9 @@
 import React from "react";
 import UserImage from "media/image/profile_image.png";
 
-function BoxColumn({ data, size = "lg", children }) {
+function BoxColumn({ size = "lg", onClick, data, children }) {
   return (
-    <div className={"Column-container " + size}>
+    <div className={"Column-container " + size} onClick={onClick}>
       <span className="Column-img-wrapper ">
         <img src={UserImage} alt="프로필 이미지" />
       </span>

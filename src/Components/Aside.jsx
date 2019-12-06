@@ -7,7 +7,7 @@ import MenuIco from "media/ico/menu.svg";
 import RouteData from "Routes";
 
 const Aside = ({ location }) => {
-  const btnFill = path => {
+  const fillBtn = path => {
     return path === location.pathname ? "black" : "gray";
   };
   return (
@@ -15,7 +15,7 @@ const Aside = ({ location }) => {
       <div className="App-aside-top">
         {RouteData.map(({ path, ico, alt }, index) => (
           <Link to={path} key={index}>
-            {ico(btnFill(path))}
+            {ico(fillBtn(path))}
           </Link>
         ))}
       </div>
