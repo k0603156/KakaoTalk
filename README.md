@@ -61,3 +61,5 @@
     react-redux
 
     react-syntax-highlighter
+
+##### 친구 채팅 외부 UI 구현 단계 API는 정리중 REDUX사용 상태관리는 친구목록부터 구현중 - 2019-12-09
