@@ -1,8 +1,9 @@
 import React from "react";
-import { HashRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "./AppRoute";
 import Aside from "./Aside";
 import Footer from "./Footer";
+import socket from "Api/socket";
 function App() {
   return (
     <Router>
