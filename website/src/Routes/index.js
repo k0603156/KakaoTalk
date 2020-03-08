@@ -1,4 +1,4 @@
-import User from "./User";
+import Home from "./Home";
 import Chat from "./Chat";
 import More from "./More";
 import { UserIco, SpeechBubbleIco, EllipseIco } from "Components/ToggleIcons";
@@ -6,7 +6,7 @@ import { UserIco, SpeechBubbleIco, EllipseIco } from "Components/ToggleIcons";
 export default [
   {
     path: "/",
-    component: User,
+    component: Home,
     ico: UserIco
   },
   {

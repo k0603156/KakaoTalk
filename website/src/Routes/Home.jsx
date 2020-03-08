@@ -4,7 +4,7 @@ import { addFriend, deleteFavorite, deleteFriend } from "Store/modules/friends";
 import Header from "Components/Header";
 import BoxColumn from "Components/BoxColumn";
 import Modal from "Components/Modal";
-const User = ({ friends, addFriend, deleteFavorite, deleteFriend }) => {
+const Home = ({ friends, addFriend, deleteFavorite, deleteFriend }) => {
   const headerData = {
     title: "친구",
     placeHolder: "이름 검색"
@@ -67,4 +67,4 @@ const mapDispatchToProps = dispatch => ({
   deleteFavorite: friend => dispatch(deleteFavorite(friend)),
   deleteFriend: friend => dispatch(deleteFriend(friend))
 });
-export default connect(mapStateToProps, mapDispatchToProps)(User);
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
